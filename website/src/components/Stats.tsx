@@ -1,13 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const stats = [
-  { value: "40+", label: "Years Experience" },
-  { value: "20+", label: "Successful Businesses" },
-  { value: "1400+", label: "Staff Worldwide" },
-  { value: "Millions", label: "Guests Hosted" },
-];
+import { stats } from "@/lib/site-data";
 
 export default function Stats() {
   return (
@@ -25,7 +19,7 @@ export default function Stats() {
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-orange mb-2">
                 {stat.value}
               </h2>
-              <p className="text-white/60 text-sm font-bold tracking-widest uppercase">
+              <p className="text-white/60 text-sm font-bold tracking-[0.2em] uppercase">
                 {stat.label}
               </p>
             </motion.div>

@@ -1,16 +1,19 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "The Story", href: "/story" },
+  { name: "About Tony", href: "/about" },
   { name: "Ventures", href: "/ventures" },
-  { name: "Consulting", href: "/consulting" },
+  { name: "Events", href: "/events" },
+  { name: "Media", href: "/media" },
+  { name: "Insights", href: "/insights" },
+  { name: "Work With Tony", href: "/work-with-tony" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -20,9 +23,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -30,80 +31,81 @@ export default function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-6 py-4",
+        "fixed inset-x-0 top-0 z-50 transition-all duration-500 px-6",
         isScrolled
-          ? "bg-white/90 backdrop-blur-xl border-b border-border shadow-sm py-3"
-          : "bg-transparent py-6"
+          ? "bg-white/90 backdrop-blur-xl border-b border-border py-3 shadow-sm"
+          : "bg-transparent py-5"
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-7xl mx-auto flex items-center justify-between gap-6">
         <Link
           href="/"
-          className="text-2xl font-serif font-black tracking-tighter text-foreground group"
+          className="text-2xl font-serif font-black tracking-tighter text-foreground group whitespace-nowrap"
         >
-          TONY <span className="text-brand-orange group-hover:text-foreground transition-colors">TRUMAN</span>
+          TONY{" "}
+          <span className="text-brand-orange group-hover:text-foreground transition-colors">
+            TRUMAN
+          </span>
         </Link>
 
-        {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-10">
+        <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               className={cn(
-                "text-[13px] font-bold uppercase tracking-[0.2em] transition-all hover:text-brand-orange",
-                pathname === link.href ? "text-brand-orange" : "text-foreground"
+                "text-[11px] font-bold uppercase tracking-[0.18em] transition-colors whitespace-nowrap",
+                pathname === link.href
+                  ? "text-brand-orange"
+                  : "text-foreground hover:text-brand-orange"
               )}
             >
               {link.name}
             </Link>
           ))}
-          <Link
-            href="/contact"
-            className="bg-brand-orange text-white px-7 py-3 rounded-full text-[13px] font-black uppercase tracking-widest shadow-xl shadow-brand-orange/20 hover:bg-foreground hover:shadow-none transition-all transform hover:-translate-y-1 active:scale-95"
-          >
-            Inquire Now
-          </Link>
         </div>
 
-        {/* Mobile Toggle */}
+        <Link
+          href="/work-with-tony"
+          className="hidden md:inline-flex bg-brand-orange text-white px-6 py-3 rounded-full text-[12px] font-black uppercase tracking-widest shadow-lg shadow-brand-orange/25 hover:bg-foreground transition-colors whitespace-nowrap"
+        >
+          Discuss Opportunities
+        </Link>
+
         <button
-          className="md:hidden text-foreground p-2"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          type="button"
+          className="lg:hidden text-foreground p-2"
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-0 left-0 w-full h-screen bg-white z-[60] p-10 flex flex-col items-center justify-center space-y-8 animate-in fade-in zoom-in duration-300">
-          <button
-            className="absolute top-6 right-6 text-foreground"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            <X size={32} />
-          </button>
-          {navLinks.map((link) => (
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-b border-border shadow-lg p-6">
+          <div className="flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={cn(
+                  "text-sm font-bold uppercase tracking-[0.2em] py-2",
+                  pathname === link.href ? "text-brand-orange" : "text-foreground"
+                )}
+              >
+                {link.name}
+              </Link>
+            ))}
             <Link
-              key={link.name}
-              href={link.href}
-              className={cn(
-                "text-3xl font-serif font-bold",
-                pathname === link.href ? "text-brand-orange" : "text-foreground"
-              )}
+              href="/work-with-tony"
               onClick={() => setIsMobileMenuOpen(false)}
+              className="mt-2 bg-brand-orange text-white px-6 py-3 rounded-full text-xs font-black uppercase tracking-widest text-center"
             >
-              {link.name}
+              Discuss Opportunities
             </Link>
-          ))}
-          <Link
-            href="/contact"
-            className="bg-brand-orange text-white px-10 py-4 rounded-full text-lg font-black uppercase tracking-widest"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Inquire Now
-          </Link>
+          </div>
         </div>
       )}
     </nav>
