@@ -1,0 +1,544 @@
+Tony Truman – Website Content Structure
+1️⃣ Hero Section (Homepage Top)
+
+Headline idea:
+
+Tony Truman
+Entrepreneur Behind Some of Ibiza’s Most Iconic Hospitality Brands
+
+Subtext:
+
+Owner & Founding Partner of IMI Group, the company behind O Beach Ibiza, Wi-Ki-Woo Hotel, Bam Bu Ku Ibiza, and Faith Concierge.
+
+CTA Buttons:
+
+Explore Ventures
+
+Work With Tony
+
+Background suggestion:
+
+Ibiza beach club video
+
+O Beach party visuals
+
+2️⃣ About Tony Truman
+
+Content example (based on LinkedIn):
+
+Tony Truman is a hospitality entrepreneur and founding partner of IMI Group, the company behind some of Ibiza’s most iconic venues including O Beach Ibiza, Wi-Ki-Woo Hotel Ibiza, Bam Bu Ku Ibiza, and Faith Concierge.
+
+His journey began at the age of 15 when he hosted his first party. That moment sparked a passion for events and nightlife that would shape his future.
+
+After discovering Ibiza during a family holiday in 1983, Tony made it his mission to build some of the best hospitality experiences on the island.
+
+Over the past 40+ years, he has built multiple businesses, hosted world-class events, and created unforgettable experiences for guests from around the globe.
+
+3️⃣ Tony’s Journey (Timeline Section)
+
+1983
+Discovered Ibiza during a family holiday
+
+Age 15
+Hosted first party
+
+2011
+Launched O Beach Ibiza
+
+2015
+Launched Wi-Ki-Woo Hotel Ibiza
+
+2019
+Launched Bam Bu Ku Ibiza
+
+2020
+Founded Book Your Hotels
+
+Present
+Operating 20+ hospitality businesses with 1400+ staff
+
+4️⃣ Businesses / Ventures Section
+
+This is very important for his website.
+
+O Beach Ibiza
+
+Luxury day club offering world-class pool parties and entertainment.
+
+Wi-Ki-Woo Hotel Ibiza
+
+One of the most Instagrammable hotels in Ibiza with luxury hospitality and unique design.
+
+Bam Bu Ku Ibiza
+
+Tropical beach club offering a family-friendly experience under the Mediterranean sun.
+
+Faith Concierge
+
+Luxury concierge service providing:
+
+Villas
+
+Yachts
+
+Restaurants
+
+VIP experiences
+
+O Beach Dubai
+
+International expansion of the famous Ibiza day club.
+
+5️⃣ Events & Experiences
+
+Highlight what IMI Group does:
+
+Luxury beach clubs
+
+Music-led hospitality
+
+Global events
+
+Celebrity appearances
+
+VIP experiences
+
+International festivals
+
+6️⃣ Tony’s Philosophy Section
+
+Use his LinkedIn message:
+
+"If you don't back yourself, why would anyone else?"
+
+Focus on:
+
+Entrepreneurship
+
+Persistence
+
+Learning from failures
+
+Building great teams
+
+7️⃣ Media / Stories
+
+Examples:
+
+Conor McGregor visiting O Beach
+
+Celebrity events
+
+Ibiza nightlife stories
+
+Hospitality insights
+
+8️⃣ Work With Tony
+
+Possible services:
+
+Hospitality consulting
+
+Business partnerships
+
+Event collaborations
+
+Brand licensing
+
+Venue development
+
+CTA:
+
+Send a message to discuss opportunities
+
+9️⃣ Contact Section
+
+Business inquiries:
+
+Email
+
+LinkedIn
+
+Company offices
+
+Locations:
+
+Ibiza
+
+Dubai
+
+UK
+
+Website Design Style
+
+It should look like:
+
+Luxury + nightlife + Ibiza lifestyle
+
+Color palette:
+
+Black
+White
+Orange (O Beach color)
+Gold accents
+
+Fonts:
+
+Modern bold luxury fonts.
+
+Website Pages Structure
+
+Home
+About Tony
+Ventures
+Events
+Media
+Insights (Blog)
+Work With Tony
+Contact
+
+BONUS (Important for Selling Website)
+
+If you pitch this to him, say:
+
+“This website will position Tony Truman as the global face of music-led hospitality.”
+
+This can attract:
+
+Investors
+
+Partnerships
+
+Hotel collaborations
+
+Global expansions
+
+
+
+
+1️⃣ Exact Website Layout (Developer Wireframe)
+
+This is the exact section order your developer should follow.
+
+PAGE 1 — HOMEPAGE
+1. Hero Section
+
+Full-width video/image background (Ibiza beach club vibe)
+
+Heading:
+Tony Truman
+Entrepreneur Behind Some of Ibiza’s Most Iconic Hospitality Brands
+
+Subtext
+Founder of O Beach Ibiza, Wi-Ki-Woo Hotel, Bam Bu Ku & Faith Concierge.
+
+Buttons
+
+Explore Ventures
+
+Work With Tony
+
+Background
+O Beach Ibiza party / drone footage.
+
+2. Social Proof Section
+
+Show big numbers.
+
+Layout: 4 columns
+
+40+ Years Experience
+
+20+ Businesses
+
+1400+ Staff Worldwide
+
+Millions of Guests Hosted
+
+3. Tony Story Section
+
+Left side image
+Right side text
+
+Title
+From Hosting Parties at 15 → Building Global Hospitality Brands
+
+Text
+Short biography explaining:
+
+first party at 15
+
+Ibiza discovery in 1983
+
+building O Beach
+
+growing IMI Group
+
+Button
+Read Full Story
+
+4. Ventures Section
+
+Grid layout (4 cards)
+
+Each card includes:
+
+Image
+Logo
+Short description
+
+Cards:
+
+O Beach Ibiza
+Wi-Ki-Woo Hotel Ibiza
+Bam Bu Ku Ibiza
+Faith Concierge
+
+Button:
+
+View All Ventures
+
+5. Experience Section
+
+Large visual section showing:
+
+parties
+
+luxury hotels
+
+beach clubs
+
+events
+
+Title:
+
+Creating World-Class Experiences
+
+Bullet list:
+
+Luxury Day Clubs
+Global Music Events
+VIP Hospitality
+Luxury Concierge
+
+6. Global Expansion Section
+
+Map showing locations
+
+Locations:
+
+Ibiza
+Dubai
+UK
+
+Text:
+
+“Building hospitality experiences across the world.”
+
+7. Tony’s Philosophy Section
+
+Big quote block:
+
+“If you don't back yourself, why would anyone else?”
+
+Supporting text about entrepreneurship and leadership.
+
+8. Media / Stories Section
+
+3 blog cards.
+
+Examples:
+
+How O Beach Became Ibiza’s Iconic Day Club
+From £1M Debt to Global Hospitality Brand
+The Story Behind Wi-Ki-Woo Hotel
+
+Button:
+
+View All Articles
+
+9. Work With Tony Section
+
+Services grid:
+
+Hospitality Consulting
+Brand Partnerships
+Venue Development
+Luxury Event Collaborations
+
+Button:
+
+Discuss Opportunities
+
+10. Contact Section
+
+Simple form:
+
+Name
+Email
+Message
+
+Buttons:
+
+Send Message
+
+11. Footer
+
+Links:
+
+Home
+About
+Ventures
+Media
+Contact
+
+Social:
+
+LinkedIn
+Instagram
+
+PAGE 2 — ABOUT
+
+Sections:
+
+Hero
+Tony Story
+Timeline
+Awards / Achievements
+Leadership Philosophy
+Call to Action
+
+PAGE 3 — VENTURES
+
+Each business card with:
+
+Image
+Description
+Visit Website button
+
+Businesses:
+
+O Beach Ibiza
+Wi-Ki-Woo Hotel
+Bam Bu Ku
+Faith Concierge
+O Beach Dubai
+
+PAGE 4 — MEDIA / BLOG
+
+Articles like:
+
+Business lessons
+Hospitality insights
+Event industry
+
+PAGE 5 — CONTACT
+
+Contact form
+Business email
+Locations
+
+2️⃣ How to Charge $3000 – $8000
+
+Most freelancers charge too little.
+
+You must sell VALUE not website.
+
+Package 1 — Basic ($3000)
+
+Includes:
+
+5 pages website
+Mobile responsive
+CMS blog
+Contact form
+
+Delivery:
+2–3 weeks
+
+Package 2 — Professional ($5000)
+
+Includes:
+
+Everything in Basic +
+
+Custom UI design
+Luxury animations
+Brand storytelling
+SEO setup
+Blog system
+
+Delivery:
+3–4 weeks
+
+Package 3 — Premium ($8000)
+
+Includes:
+
+Everything above +
+
+Custom design (Figma)
+Luxury animation effects
+High-end landing page
+Copywriting
+Speed optimization
+SEO foundation
+
+Delivery:
+4–6 weeks
+
+How You Should Pitch It
+
+Instead of saying:
+
+"I will build you a website."
+
+Say this:
+
+"I will build your personal brand platform that showcases your ventures, attracts partnerships, and positions you as a global hospitality leader."
+
+Why He Would Pay $5k+
+
+Because the site helps:
+
+attract investors
+
+promote ventures
+
+build personal brand
+
+get partnerships
+
+media exposure
+
+For someone running 20+ businesses, $5k is small.
+
+Tech Stack Your Developer Can Use
+
+Option 1 (Best)
+
+Webflow
+Luxury animation
+Fast development
+
+Option 2
+
+WordPress + Elementor
+
+Option 3
+
+Next.js / React
+
+Pro Tip (Very Important)
+
+Add this feature:
+
+“Press & Media Kit”
+
+Journalists can download:
+
+Bio
+Images
+Brand info
+
+This makes the site much more professional.
