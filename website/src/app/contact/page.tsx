@@ -1,10 +1,11 @@
 import { Instagram, Linkedin } from "lucide-react";
 import Contact from "@/components/Contact";
 import PageHero from "@/components/PageHero";
+import { socialProfiles } from "@/lib/site-data";
 
 const socialLinks = [
-  { label: "Instagram", href: "https://www.instagram.com/", icon: Instagram },
-  { label: "LinkedIn", href: "https://www.linkedin.com/", icon: Linkedin },
+  { label: "Instagram", href: socialProfiles.oBeachInstagram, icon: Instagram },
+  { label: "LinkedIn", href: socialProfiles.linkedin, icon: Linkedin },
 ];
 
 export default function ContactPage() {

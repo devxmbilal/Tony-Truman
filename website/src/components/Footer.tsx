@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { Instagram, Linkedin, Mail, Building2 } from "lucide-react";
+import { socialProfiles } from "@/lib/site-data";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -21,8 +23,8 @@ export default function Footer() {
               TONY <span className="text-brand-orange">TRUMAN</span>
             </div>
             <p className="text-white/70 leading-relaxed max-w-sm">
-              Personal brand platform for global music-led hospitality, strategic
-              partnerships, and iconic lifestyle ventures.
+              Personal brand platform for global music-led hospitality,
+              strategic partnerships, and iconic lifestyle ventures.
             </p>
           </div>
 
@@ -48,41 +50,47 @@ export default function Footer() {
             <h4 className="text-sm font-bold uppercase tracking-widest text-white/50 mb-5">
               Connect
             </h4>
-            <ul className="space-y-3 text-sm">
-              <li>
-                <a
-                  href="mailto:inquiries@tonytruman.com"
-                  className="text-white/80 hover:text-brand-orange transition-colors"
-                >
-                  inquiries@tonytruman.com
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white/80 hover:text-brand-orange transition-colors"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white/80 hover:text-brand-orange transition-colors"
-                >
-                  LinkedIn
-                </a>
-              </li>
-            </ul>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="mailto:inquiries@tonytruman.com"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-white/90 hover:text-brand-orange hover:border-brand-orange transition-colors text-xs font-bold uppercase tracking-widest"
+              >
+                <Mail size={14} />
+                Email
+              </a>
+              <a
+                href={socialProfiles.oBeachInstagram}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-white/90 hover:text-brand-orange hover:border-brand-orange transition-colors text-xs font-bold uppercase tracking-widest"
+              >
+                <Instagram size={14} />
+                Instagram
+              </a>
+              <a
+                href={socialProfiles.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-white/90 hover:text-brand-orange hover:border-brand-orange transition-colors text-xs font-bold uppercase tracking-widest"
+              >
+                <Linkedin size={14} />
+                LinkedIn
+              </a>
+              <a
+                href={socialProfiles.imiLinkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-white/90 hover:text-brand-orange hover:border-brand-orange transition-colors text-xs font-bold uppercase tracking-widest"
+              >
+                <Building2 size={14} />
+                IMI Group
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/10 text-sm text-white/50 flex flex-col md:flex-row gap-4 justify-between">
-          <p>© {new Date().getFullYear()} Tony Truman. All rights reserved.</p>
+          <p>(c) {new Date().getFullYear()} Tony Truman. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/contact" className="hover:text-white transition-colors">
               Privacy
