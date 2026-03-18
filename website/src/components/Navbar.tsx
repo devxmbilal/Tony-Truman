@@ -17,8 +17,9 @@ const navLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
-// Only pages with a FULL-SCREEN dark image hero at the very top (not PageHero which is white)
-const darkHeroPages = ["/", "/events"];
+// Only home page has a FULL-SCREEN dark image hero at the very top
+// Events and all other pages use PageHero which has white background
+const darkHeroPages = ["/"];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

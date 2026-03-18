@@ -13,7 +13,7 @@ const articles = [
     summary:
       "Frameworks for market fit, concept scaling, and protecting brand positioning in competitive destinations like Ibiza and Dubai.",
     readTime: "5 min",
-    image: "/images/1737621934888.jpg",
+    image: "/images/1772700307557.jpg",
     linkedinQuote:
       '"From £1,000,000 in debt to opening the first O Beach in Ibiza. The journey has been one hell of a ride."',
   },
@@ -167,26 +167,28 @@ export default function InsightsPage() {
       </section>
 
       {/* Follow CTA */}
-      <section className="py-24 bg-foreground text-white text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="text-sm font-bold tracking-[0.3em] uppercase text-brand-orange mb-4">
-            Stay Connected
-          </p>
-          <h2 className="text-4xl md:text-5xl font-serif font-black mb-6">
-            Get Tony&apos;s Insights Direct
-          </h2>
-          <p className="text-white/70 text-lg mb-10">
-            Tony regularly shares lessons, behind-the-scenes stories, and real business insights on LinkedIn. Follow to stay updated on the IMI Group and future projects.
-          </p>
-          <a
-            href="https://www.linkedin.com/in/tony-truman-59188a206/"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full text-sm font-black uppercase tracking-widest hover:bg-white hover:text-foreground transition-colors"
-          >
-            Follow Tony on LinkedIn
-            <ArrowRight size={16} />
-          </a>
+      <section className="py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="rounded-3xl bg-foreground text-white p-10 md:p-16 text-center">
+            <p className="text-sm font-bold tracking-[0.3em] uppercase text-brand-orange mb-4">
+              Stay Connected
+            </p>
+            <h2 className="text-4xl md:text-5xl font-serif font-black mb-6">
+              Get Tony&apos;s Insights Direct
+            </h2>
+            <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
+              Tony regularly shares lessons, behind-the-scenes stories, and real business insights on LinkedIn. Follow to stay updated on the IMI Group and future projects.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/tony-truman-59188a206/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full text-sm font-black uppercase tracking-widest hover:bg-white hover:text-foreground transition-colors"
+            >
+              Follow Tony on LinkedIn
+              <ArrowRight size={16} />
+            </a>
+          </div>
         </div>
       </section>
     </main>

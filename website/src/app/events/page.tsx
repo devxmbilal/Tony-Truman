@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ExternalLink, PlayCircle } from "lucide-react";
 import PageHero from "@/components/PageHero";
-import LinkedInEmbedsSection from "@/components/LinkedInEmbedsSection";
 import { eventPillars, eventProjects, socialProfiles } from "@/lib/site-data";
 
 const eventImage = "/images/1746690639672.jpg";
@@ -81,40 +80,38 @@ export default function EventsPage() {
         </div>
       </section>
 
-      <LinkedInEmbedsSection
-        className="py-20 bg-muted"
-        title="LinkedIn Event Posts"
-        subtitle="Embedded LinkedIn posts for social proof and recent activity."
-      />
-
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-black mb-6">
-            Follow Event Highlights
-          </h2>
-          <p className="text-muted-foreground text-lg mb-8">
-            For latest event videos and live updates, check official social and
-            LinkedIn channels.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href={socialProfiles.oBeachInstagram}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-foreground transition-colors"
-            >
-              O Beach Instagram
-              <ArrowRight size={14} />
-            </Link>
-            <Link
-              href={socialProfiles.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 border border-border px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:border-brand-orange hover:text-brand-orange transition-colors"
-            >
-              Tony LinkedIn
-              <ExternalLink size={14} />
-            </Link>
+      <section className="py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="rounded-3xl bg-foreground text-white p-10 md:p-16 text-center">
+            <p className="text-sm font-bold tracking-[0.3em] uppercase text-brand-orange mb-4">
+              Stay Updated
+            </p>
+            <h2 className="text-4xl md:text-5xl font-serif font-black mb-6">
+              Follow Event Highlights
+            </h2>
+            <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
+              For the latest event videos, live updates, and season announcements — follow the official social and LinkedIn channels.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href={socialProfiles.oBeachInstagram}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-white hover:text-foreground transition-colors"
+              >
+                O Beach Instagram
+                <ArrowRight size={14} />
+              </Link>
+              <Link
+                href={socialProfiles.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:border-brand-orange hover:text-brand-orange transition-colors"
+              >
+                Tony LinkedIn
+                <ExternalLink size={14} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

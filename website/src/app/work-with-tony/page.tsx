@@ -180,7 +180,7 @@ export default function WorkWithTonyPage() {
             className="relative aspect-[4/5] rounded-3xl overflow-hidden"
           >
             <Image
-              src="/images/1772700307557.jpg"
+              src="/images/1755675909660.jpg"
               alt="Tony Truman — O Beach Dubai"
               fill
               className="object-cover"
@@ -275,24 +275,26 @@ export default function WorkWithTonyPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-foreground text-white text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <p className="text-sm font-bold tracking-[0.3em] uppercase text-brand-orange mb-4">
-            Ready?
-          </p>
-          <h2 className="text-4xl md:text-5xl font-serif font-black mb-6">
-            Let&apos;s Build Something Exceptional
-          </h2>
-          <p className="text-white/70 text-lg mb-10">
-            Send a brief message and Tony&apos;s team will respond to scope the opportunity. Whether it&apos;s a consulting project, partnership, or event collaboration — every great outcome starts with one conversation.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-brand-orange text-white px-10 py-5 rounded-full text-sm font-black uppercase tracking-widest hover:bg-white hover:text-foreground transition-colors"
-          >
-            Get In Touch
-            <ArrowRight size={16} />
-          </Link>
+      <section className="py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="rounded-3xl bg-foreground text-white p-10 md:p-16 text-center">
+            <p className="text-sm font-bold tracking-[0.3em] uppercase text-brand-orange mb-4">
+              Ready?
+            </p>
+            <h2 className="text-4xl md:text-5xl font-serif font-black mb-6">
+              Let&apos;s Build Something Exceptional
+            </h2>
+            <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
+              Send a brief message and Tony&apos;s team will respond to scope the opportunity. Whether it&apos;s a consulting project, partnership, or event collaboration — every great outcome starts with one conversation.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-brand-orange text-white px-10 py-5 rounded-full text-sm font-black uppercase tracking-widest hover:bg-white hover:text-foreground transition-colors"
+            >
+              Get In Touch
+              <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
     </main>

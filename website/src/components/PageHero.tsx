@@ -32,7 +32,7 @@ export default function PageHero({
               {category}
             </span>
           )}
-          <h1 className="text-5xl md:text-8xl font-serif font-black leading-tight mb-7">
+          <h1 className="text-4xl md:text-6xl font-serif font-black leading-tight mb-7">
             {title}
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl">

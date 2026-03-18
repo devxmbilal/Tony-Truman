@@ -65,22 +65,26 @@ export default function VenturesPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-foreground text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-6xl font-serif font-black mb-6 leading-tight">
-            Looking to Partner With an IMI Brand?
-          </h2>
-          <p className="text-white/70 text-lg mb-10">
-            We collaborate with aligned partners on high-impact hospitality and
-            lifestyle opportunities.
-          </p>
-          <Link
-            href="/work-with-tony"
-            className="inline-flex items-center gap-2 bg-white text-foreground px-8 py-4 rounded-full text-sm font-black uppercase tracking-widest hover:bg-brand-orange hover:text-white transition-colors"
-          >
-            Discuss Partnerships
-            <ArrowRight size={16} />
-          </Link>
+      <section className="py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="rounded-3xl bg-foreground text-white p-10 md:p-16 text-center">
+            <p className="text-sm font-bold tracking-[0.3em] uppercase text-brand-orange mb-4">
+              Partnerships
+            </p>
+            <h2 className="text-4xl md:text-5xl font-serif font-black mb-6 leading-tight">
+              Looking to Partner With an IMI Brand?
+            </h2>
+            <p className="text-white/70 text-lg mb-10 max-w-2xl mx-auto">
+              We collaborate with aligned partners on high-impact hospitality and lifestyle opportunities.
+            </p>
+            <Link
+              href="/work-with-tony"
+              className="inline-flex items-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full text-sm font-black uppercase tracking-widest hover:bg-white hover:text-foreground transition-colors"
+            >
+              Discuss Partnerships
+              <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
     </main>
