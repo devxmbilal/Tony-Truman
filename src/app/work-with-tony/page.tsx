@@ -97,7 +97,7 @@ export default function WorkWithTonyPage() {
         category="Work With Tony"
         title="Advisory, Partnerships & Growth Projects"
         subtitle="Built for operators, investors, and brands that want to create category-leading hospitality experiences."
-        image="/images/1772700307466.jpg"
+        image="/images/1749541516683.jpg"
       />
 
       {/* Social Proof Strip */}

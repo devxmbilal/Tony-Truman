@@ -81,7 +81,7 @@ export default function InsightsPage() {
         category="Insights"
         title="Hospitality, Leadership & Growth"
         subtitle="Thoughts and lessons from four decades of building brands, teams, and high-performance venues."
-        image="/images/1772700307466.jpg"
+        image="/images/1749541516805.jpg"
       />
 
       {/* Articles Grid */}
