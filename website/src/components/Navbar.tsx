@@ -17,37 +17,48 @@ const navLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
+// Only pages with a FULL-SCREEN dark image hero at the very top (not PageHero which is white)
+const darkHeroPages = ["/", "/events"];
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => setIsScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // When transparent (top of page) AND on a dark-hero page → use white text
+  const isTransparentDark = !isScrolled && darkHeroPages.includes(pathname);
 
   return (
     <nav
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-500 px-6",
         isScrolled
-          ? "bg-white/90 backdrop-blur-xl border-b border-border py-3 shadow-sm"
+          ? "bg-white/95 backdrop-blur-xl border-b border-border py-3 shadow-sm"
           : "bg-transparent py-5"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-6">
+        {/* Logo */}
         <Link
           href="/"
-          className="text-2xl font-serif font-black tracking-tighter text-foreground group whitespace-nowrap"
+          className={cn(
+            "text-2xl font-serif font-black tracking-tighter group whitespace-nowrap transition-colors duration-300",
+            isTransparentDark ? "text-white" : "text-foreground"
+          )}
         >
           TONY{" "}
-          <span className="text-brand-orange group-hover:text-foreground transition-colors">
+          <span className="text-brand-orange group-hover:text-white transition-colors">
             TRUMAN
           </span>
         </Link>
 
+        {/* Desktop nav links */}
         <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
@@ -57,6 +68,8 @@ export default function Navbar() {
                 "text-[11px] font-bold uppercase tracking-[0.18em] transition-colors whitespace-nowrap",
                 pathname === link.href
                   ? "text-brand-orange"
+                  : isTransparentDark
+                  ? "text-white/90 hover:text-brand-orange"
                   : "text-foreground hover:text-brand-orange"
               )}
             >
@@ -65,16 +78,26 @@ export default function Navbar() {
           ))}
         </div>
 
+        {/* CTA Button */}
         <Link
           href="/work-with-tony"
-          className="hidden md:inline-flex bg-brand-orange text-white px-6 py-3 rounded-full text-[12px] font-black uppercase tracking-widest shadow-lg shadow-brand-orange/25 hover:bg-foreground transition-colors whitespace-nowrap"
+          className={cn(
+            "hidden md:inline-flex px-6 py-3 rounded-full text-[12px] font-black uppercase tracking-widest transition-colors whitespace-nowrap",
+            isTransparentDark
+              ? "bg-white text-foreground hover:bg-brand-orange hover:text-white shadow-lg"
+              : "bg-brand-orange text-white shadow-lg shadow-brand-orange/25 hover:bg-foreground"
+          )}
         >
           Discuss Opportunities
         </Link>
 
+        {/* Mobile toggle */}
         <button
           type="button"
-          className="lg:hidden text-foreground p-2"
+          className={cn(
+            "lg:hidden p-2 transition-colors",
+            isTransparentDark ? "text-white" : "text-foreground"
+          )}
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
@@ -82,6 +105,7 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-b border-border shadow-lg p-6">
           <div className="flex flex-col gap-4">

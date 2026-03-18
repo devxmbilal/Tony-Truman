@@ -1,11 +1,12 @@
-import { Instagram, Linkedin } from "lucide-react";
+import { Instagram, Linkedin, Building2 } from "lucide-react";
 import Contact from "@/components/Contact";
 import PageHero from "@/components/PageHero";
 import { socialProfiles } from "@/lib/site-data";
 
 const socialLinks = [
-  { label: "Instagram", href: socialProfiles.oBeachInstagram, icon: Instagram },
-  { label: "LinkedIn", href: socialProfiles.linkedin, icon: Linkedin },
+  { label: "@tonytrumanibiza", href: socialProfiles.tonyInstagram, icon: Instagram },
+  { label: "Tony Truman", href: socialProfiles.linkedin, icon: Linkedin },
+  { label: "IMI Group", href: socialProfiles.imiLinkedin, icon: Building2 },
 ];
 
 export default function ContactPage() {
@@ -48,9 +49,9 @@ export default function ContactPage() {
           </div>
 
           <div className="p-8 bg-white rounded-3xl border border-border">
-            <h2 className="text-xl font-serif font-bold mb-3">Social</h2>
+            <h2 className="text-xl font-serif font-bold mb-3">Social Media</h2>
             <p className="text-muted-foreground mb-5">
-              Follow updates across hospitality, ventures, and media moments.
+              Follow Tony&apos;s personal Instagram and LinkedIn for real-time updates.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((link) => {
@@ -62,6 +63,7 @@ export default function ContactPage() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={link.label}
+                    title={link.label}
                     className="w-10 h-10 bg-muted rounded-full flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"
                   >
                     <Icon size={18} />

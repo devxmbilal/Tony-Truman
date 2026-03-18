@@ -13,6 +13,7 @@ const quickLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
+
 export default function Footer() {
   return (
     <footer className="py-20 bg-foreground text-white">
@@ -59,13 +60,13 @@ export default function Footer() {
                 Email
               </a>
               <a
-                href={socialProfiles.oBeachInstagram}
+                href={socialProfiles.tonyInstagram}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-white/90 hover:text-brand-orange hover:border-brand-orange transition-colors text-xs font-bold uppercase tracking-widest"
               >
                 <Instagram size={14} />
-                Instagram
+                @tonytrumanibiza
               </a>
               <a
                 href={socialProfiles.linkedin}

@@ -8,16 +8,15 @@ import PageHero from "@/components/PageHero";
 import LinkedInEmbedsSection from "@/components/LinkedInEmbedsSection";
 import { eventPillars, eventProjects, socialProfiles } from "@/lib/site-data";
 
-const eventImage =
-  "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=2670&auto=format&fit=crop";
+const eventImage = "/images/1746690639672.jpg";
 
 export default function EventsPage() {
   return (
     <main>
       <PageHero
         category="Events & Experiences"
-        title="Projects, Events, and Brand Activations"
-        subtitle="A selection of event formats delivered through O Beach Ibiza and Bam Bu Ku."
+        title="Live Events, Branded Shows & Activations"
+        subtitle="From KISSTORY at O Beach to the Grand National Festival Zone — event formats that define a season."
         image={eventImage}
       />
 

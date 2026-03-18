@@ -13,7 +13,8 @@ export default function VenturesPage() {
       <PageHero
         category="Ventures"
         title="Iconic Brands, Global Footprint"
-        subtitle="From day clubs to boutique hospitality and concierge, these ventures shape the IMI Group ecosystem."
+        subtitle="O Beach · Wi-Ki-Woo Hotel · Bam Bu Ku · O Beach Dubai · UMusic Hotels · Chi Kee Wun · Faith Concierge · Book Your Hotels — the IMI Group ecosystem."
+        image="/images/1759995980586.jpg"
       />
 
       <section className="py-24 bg-white">
@@ -28,15 +29,20 @@ export default function VenturesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.55, delay: index * 0.06 }}
                 viewport={{ once: true }}
-                className="group rounded-3xl overflow-hidden border border-border bg-white hover:shadow-xl transition-shadow"
+                className="group rounded-3xl overflow-hidden border border-border bg-white hover:shadow-xl hover:border-brand-orange transition-all duration-500"
               >
-                <div className="relative aspect-[4/3]">
+                <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
                     src={venture.image}
                     alt={venture.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
+                  {venture.tag && (
+                    <span className="absolute top-4 left-4 bg-brand-orange text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                      {venture.tag}
+                    </span>
+                  )}
                 </div>
                 <div className="p-7">
                   <h2 className="text-2xl font-serif font-bold mb-3">{venture.name}</h2>

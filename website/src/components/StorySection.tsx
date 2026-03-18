@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-const imageSrc =
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop";
+const imageSrc = "/images/1762505105811.jpg";
 
 export default function StorySection() {
   return (
@@ -35,19 +34,16 @@ export default function StorySection() {
           viewport={{ once: true }}
         >
           <p className="text-sm font-bold tracking-[0.3em] uppercase text-brand-orange mb-4">
-            Tony Story
+            Tony&apos;s Story
           </p>
           <h2 className="text-4xl md:text-6xl font-serif font-black leading-tight mb-8">
-            From Hosting Parties at 15 to Building Global Hospitality Brands
+            From His First Party at 15 to Building Global Hospitality Brands
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Tony Truman started promoting events as a teenager and discovered
-            Ibiza in 1983. That early ambition became a four-decade mission to
-            create iconic venues and unforgettable guest experiences.
+            At the tender age of 15, Tony hosted his very first party. Then, a family holiday to Ibiza in 1983 changed everything — the island, the people, the experience never left his mind.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-            Today, his ventures span beach clubs, hotels, concierge services,
-            and strategic partnerships under the IMI Group umbrella.
+            41 years later, Tony is Founding Partner of the IMI Group — a portfolio of 20+ world-class hospitality venues including O Beach Ibiza, Wi-Ki-Woo Hotel and Bam Bu Ku, with 1,400+ staff worldwide.
           </p>
           <Link
             href="/about"

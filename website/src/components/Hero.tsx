@@ -33,12 +33,10 @@ export default function Hero() {
             Tony Truman
           </h1>
           <p className="text-xl md:text-3xl text-white/90 font-medium max-w-3xl leading-relaxed mb-10">
-            Entrepreneur behind some of Ibiza&apos;s most iconic hospitality
-            brands.
+            Founding Partner of the IMI Group — creating some of the world&apos;s best hospitality experiences.
           </p>
           <p className="text-base md:text-lg text-white/75 max-w-2xl mb-12">
-            Founder of O Beach Ibiza, Wi-Ki-Woo Hotel, Bam Bu Ku, and Faith
-            Concierge.
+            O Beach Ibiza · Wi-Ki-Woo Hotel · Bam Bu Ku · O Beach Dubai · 20+ businesses worldwide.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5">
@@ -68,13 +66,13 @@ export default function Hero() {
               LinkedIn
             </a>
             <a
-              href={socialProfiles.oBeachInstagram}
+              href={socialProfiles.tonyInstagram}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/25 text-white text-xs font-bold uppercase tracking-widest hover:border-brand-orange hover:text-brand-orange transition-colors"
             >
               <Instagram size={14} />
-              Event Media
+              @tonytrumanibiza
             </a>
             <Link
               href="/events"
@@ -84,6 +82,7 @@ export default function Hero() {
               Watch Events
             </Link>
           </div>
+
         </motion.div>
       </div>
     </section>
