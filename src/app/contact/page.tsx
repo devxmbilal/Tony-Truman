@@ -28,10 +28,10 @@ export default function ContactPage() {
               For interview requests and high-resolution brand assets.
             </p>
             <a
-              href="mailto:media@tonytruman.com"
+              href="mailto:tony@obeachibiza.com"
               className="font-bold text-brand-orange hover:underline uppercase tracking-widest text-xs"
             >
-              media@tonytruman.com
+              tony@obeachibiza.com
             </a>
           </div>
 
@@ -41,10 +41,10 @@ export default function ContactPage() {
               For events, panels, and hospitality leadership sessions.
             </p>
             <a
-              href="mailto:speaking@tonytruman.com"
+              href="mailto:tony@obeachibiza.com"
               className="font-bold text-brand-orange hover:underline uppercase tracking-widest text-xs"
             >
-              speaking@tonytruman.com
+              tony@obeachibiza.com
             </a>
           </div>
 

@@ -266,7 +266,7 @@ export default function MediaPage() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
-                href="mailto:media@tonytruman.com?subject=Media%20Kit%20Request"
+                href="mailto:tony@obeachibiza.com?subject=Media%20Kit%20Request"
                 className="inline-flex items-center justify-center gap-2 bg-brand-orange text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-white hover:text-foreground transition-colors"
               >
                 Request Media Kit
